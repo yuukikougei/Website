@@ -2,10 +2,10 @@ import React from 'react';
 
 const ExamplesPage: React.FC = () => {
   const projects = [
-    { id: 1, name: 'プロジェクト A', image: '/images/PRJ_001.JPG' },
-    { id: 2, name: 'プロジェクト B', image: '/images/PRJ_002.JPG' },
-    { id: 3, name: 'プロジェクト C', image: '/images/PRJ_003.JPG' },
-    { id: 4, name: 'プロジェクト D', image: '/images/PRJ_004.JPG' },
+    { id: 1, name: 'プロジェクト A', image: import.meta.env.BASE_URL + 'images/PRJ_001.JPG' },
+    { id: 2, name: 'プロジェクト B', image: import.meta.env.BASE_URL + 'images/PRJ_002.JPG' },
+    { id: 3, name: 'プロジェクト C', image: import.meta.env.BASE_URL + 'images/PRJ_003.JPG' },
+    { id: 4, name: 'プロジェクト D', image: import.meta.env.BASE_URL + 'images/PRJ_004.JPG' },
   ];
 
   return (

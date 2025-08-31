@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     <header>
       <div className="container">
         <div className="logo">
-          <img src="/images/LOGO.JPG" alt="YUUKI KOUGEI Logo" />
+          <img src={import.meta.env.BASE_URL + "images/LOGO.JPG"} alt="YUUKI KOUGEI Logo" />
           <span>ゆうき工芸</span>
         </div>
         <nav>
