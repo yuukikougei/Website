@@ -1,0 +1,382 @@
+:root {
+    --color-dark-brown: #4a4131; /* Updated dark brown for header */
+    --color-beige: #e0d8cb; /* Updated beige for footer */
+    --color-accent: #FFA500; /* Orange for buttons */
+    --color-text: #333333; /* Dark Gray */
+    --color-background: #FFFFFF; /* White */
+    --color-light-text: #FFFFFF;
+    --color-dark-gray: #666666;
+}
+
+body {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: var(--color-dark-brown); /* Changed */
+    color: var(--color-light-text); /* Changed */
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom: none;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex; /* To align img and span */
+    align-items: center;
+    flex-shrink: 0; /* Prevent logo from growing */
+}
+
+.logo img {
+    height: 60px; /* ロゴの高さ調整 */
+    width: auto;
+    max-width: 100%; /* Ensure it doesn't overflow its parent */
+}
+
+.logo span {
+    margin-left: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-light-text); /* Assuming header text is light */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--color-light-text); /* Changed */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-accent); /* Changed */
+}
+
+nav ul li a.active {
+    color: var(--color-accent); /* Changed */
+    border-bottom: 2px solid var(--color-accent); /* Changed */
+    padding-bottom: 3px;
+}
+
+/* Slideshow Hero Section Styles */
+.hero.slideshow-hero {
+    padding: 0; /* Remove padding as slideshow will fill */
+    height: 600px; /* Fixed height for slideshow */
+    position: relative;
+    overflow: hidden;
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; /* Added */
+}
+
+.slideshow-container .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 2; /* Added */
+}
+
+.slideshow-container .slide.active {
+    opacity: 1;
+}
+
+.hero-overlay-content {
+    position: absolute;
+    z-index: 3;
+    color: var(--color-light-text);
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-overlay-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: var(--color-light-text);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-overlay-content p { /* Added style for p tag in overlay */
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: var(--color-light-text);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    background-color: var(--color-accent); /* Changed */
+    color: var(--color-light-text);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin: 0 10px; /* Added margin for spacing */
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #cc5200; /* Darker orange */
+}
+
+.btn-secondary {
+    background-color: var(--color-accent); /* Changed */
+}
+
+.btn-secondary:hover {
+    background-color: #cc5200; /* Darker orange */
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section:nth-of-type(even) {
+    background-color: var(--color-background); /* Changed to white */
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--color-primary);
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-accent);
+    margin: 10px auto 0;
+}
+
+footer {
+    background-color: var(--color-beige); /* Changed */
+    color: var(--color-text); /* Changed */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero.slideshow-hero {
+        height: 400px;
+    }
+
+    .hero-overlay-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-overlay-content p {
+        font-size: 1.2em;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-item h3 {
+    color: var(--color-primary);
+    font-size: 1.3em;
+    margin: 15px 0;
+    padding: 0 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-text {
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 1.5s ease-out forwards; /* Apply animation */
+  animation-delay: 0.5s; /* Optional: delay start of animation */
+}
+
+.button-group {
+    margin-top: 30px; /* Space above buttons */
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: center; /* Center buttons */
+    /* gap: 20px; Removed */
+}
+
+.button-group .btn-primary {
+    margin: 0 10px; /* 10px left and right margin for each button */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax as needed */
+    gap: 30px;
+    margin-top: 40px;
+    text-align: left; /* Align text within service items */
+}
+
+.service-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h3 {
+    color: var(--color-primary);
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.job-details-grid {
+    display: block;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); Removed */
+    /* gap: 30px; Removed */
+    margin-top: 40px;
+    text-align: left;
+}
+
+.job-detail-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px; /* Added margin for spacing */
+}
+
+.job-detail-item:hover {
+    transform: translateY(-5px);
+}
+
+.job-detail-item h3 {
+    color: var(--color-primary);
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.job-detail-item ul,
+.job-detail-item ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.job-detail-item li {
+    margin-bottom: 8px;
+}
+
+.job-detail-item p {
+    color: var(--color-text);
+    line-height: 1.8;
+}
