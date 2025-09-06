@@ -13,10 +13,6 @@ const CompanyPage: React.FC = () => {
         <p>FAX 番号: 095-832-3872</p>
         <p>事業内容: 船舶家具、船舶内装工事、オーダー家具製作</p>
         <div className="map-placeholder">
-          import { GOOGLE_MAPS_EMBED_URL } from "../constants/urls";
-
-// ... (既存のコード)
-
           <iframe
             src={GOOGLE_MAPS_EMBED_URL}
             width="600"

@@ -42,16 +42,8 @@ const Header: React.FC = () => {
                 会社概要
               </Link>
             </li>
-            import { INSTAGRAM_URL } from "../constants/urls";
-
-// ... (既存のコード)
-
             <li>
-              <a
-                href={INSTAGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
                 Instagram
               </a>
             </li>

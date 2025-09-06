@@ -1,5 +1,9 @@
 import React from "react";
-import { INSTAGRAM_URL, HELLOWORK_SHIP_CARPENTER_URL, HELLOWORK_FURNITURE_CRAFTSMAN_URL } from "../constants/urls";
+import {
+  INSTAGRAM_URL,
+  HELLOWORK_SHIP_CARPENTER_URL,
+  HELLOWORK_FURNITURE_CRAFTSMAN_URL,
+} from "../constants/urls";
 
 const JobsPage: React.FC = () => {
   return (
