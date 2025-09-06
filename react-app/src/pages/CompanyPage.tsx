@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const CompanyPage: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const CompanyPage: React.FC = () => {
         <p>事業内容: 船舶家具、船舶内装工事、オーダー家具製作</p>
         <div className="map-placeholder">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.50198769344!2d129.8202633151742!3d32.67256998099968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35155a9576555555%3A0x5e8e7a8b8f8e8e8e!2z44CSODUxLTAzMDE!5e0!3m2!1sja!2sjp!4v1692772285141!5m2!1sja!2sjp"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.241086290764!2d129.81670497570863!3d32.67963407370458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x351551d82b4f3603%3A0x5b3ccba1a32ec8d3!2z44CSODUxLTAzMDEg6ZW35bSO55yM6ZW35bSO5biC5rex5aCA55S677yW5LiB55uu77yU77yT77yS!5e0!3m2!1sja!2sjp!4v1757145782585!5m2!1sja!2sjp"
             width="600"
             height="450"
             style={{ border: 0 }}

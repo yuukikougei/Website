@@ -1,12 +1,12 @@
-import './index.css'; // Import global styles
-import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import ServicesPage from './pages/ServicesPage';
+import "./index.css";
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import ServicesPage from "./pages/ServicesPage";
 // import JobsPage from './pages/JobsPage';
-import ExamplesPage from './pages/ExamplesPage';
-import CompanyPage from './pages/CompanyPage';
+import ExamplesPage from "./pages/ExamplesPage";
+import CompanyPage from "./pages/CompanyPage";
 
 function App() {
   return (
