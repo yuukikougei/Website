@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { INSTAGRAM_URL } from "../constants/urls";
 
 const Header: React.FC = () => {
   const location = useLocation();

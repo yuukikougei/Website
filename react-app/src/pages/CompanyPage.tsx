@@ -1,4 +1,5 @@
 import React from "react";
+import { GOOGLE_MAPS_EMBED_URL } from "../constants/urls";
 
 const CompanyPage: React.FC = () => {
   return (
