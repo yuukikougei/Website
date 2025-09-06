@@ -40,7 +40,7 @@ const HomePage: React.FC = () => {
           <h1>長崎の海と共に、ものづくりの未来を担う</h1> 
           <p>ゆうき工芸は、長崎市に拠点を置き、船舶内装工事とオーダーメイド家具製作を専門としています。一つひとつの仕事に心を込め、確かな技術でお客様の信頼に応えてきました。事業拡大を見据え、私たちの技術と情熱を受け継いでくれる新しい仲間を募集しています。</p>
           <Link to="/services" className="btn-primary">事業内容を見る</Link>
-          <Link to="/jobs" className="btn-primary">求人情報を見る</Link>
+          {/* <Link to="/jobs" className="btn-primary">求人情報を見る</Link> */}
         </div>
       </section>
     </>

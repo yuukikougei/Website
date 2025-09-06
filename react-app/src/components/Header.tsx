@@ -19,7 +19,7 @@ const Header: React.FC = () => {
           <ul>
             <li><Link to="/" className={getNavLinkClass('/')}>トップページ</Link></li>
             <li><Link to="/services" className={getNavLinkClass('/services')}>業務内容</Link></li>
-            <li><Link to="/jobs" className={getNavLinkClass('/jobs')}>求人情報</Link></li>
+            {/* <li><Link to="/jobs" className={getNavLinkClass('/jobs')}>求人情報</Link></li> */}
             <li><Link to="/examples" className={getNavLinkClass('/examples')}>施工事例</Link></li>
             <li><Link to="/company" className={getNavLinkClass('/company')}>会社概要・アクセス</Link></li>
             <li><a href="https://www.instagram.com/yuukikougei_?igsh=c2xmNjJrajN2ZnA1" target="_blank" rel="noopener noreferrer">Instagram</a></li>
