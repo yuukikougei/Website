@@ -40,10 +40,6 @@ const JobsPage: React.FC = () => {
         </div>
 
         <div className="job-links">
-          import { INSTAGRAM_URL, HELLOWORK_SHIP_CARPENTER_URL, HELLOWORK_FURNITURE_CRAFTSMAN_URL } from "../constants/urls";
-
-// ... (既存のコード)
-
           <a
             href={HELLOWORK_SHIP_CARPENTER_URL}
             target="_blank"
