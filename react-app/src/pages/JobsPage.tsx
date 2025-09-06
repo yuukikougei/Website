@@ -39,8 +39,12 @@ const JobsPage: React.FC = () => {
         </div>
 
         <div className="job-links">
+          import { INSTAGRAM_URL, HELLOWORK_SHIP_CARPENTER_URL, HELLOWORK_FURNITURE_CRAFTSMAN_URL } from "../constants/urls";
+
+// ... (既存のコード)
+
           <a
-            href="https://www.hellowork.careers/%E3%82%86%E3%81%83%E3%81%8D%E5%B7%A5%E8%8A%B8%E3%81%A7%E3%81%AE%E8%88%B9%E8%88%B6%E7%8F%BE%E5%A0%B4%E5%A4%A7%E5%B7%A5%EF%BC%88%E5%86%85%E8%A3%85%E5%8F%8A%E3%81%B3%E6%8D%AE%E4%BB%98%EF%BC%89%E3%81%AE%E3%83%8F%E3%83%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%82%AF%E6%B1%82%E4%BA%BA%E6%83%85%E5%A0%B1%EF%BC%88%E9%95%B7%E5%B4%8E%E7%9C%8C%E9%95%B7%E5%B4%8E%E5%B8%82%EF%BC%89-%2042010-13269151/"
+            href={HELLOWORK_SHIP_CARPENTER_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
@@ -48,7 +52,7 @@ const JobsPage: React.FC = () => {
             船舶現場大工応募へのリンク
           </a>
           <a
-            href="https://www.hellowork.careers/%E3%82%86%E3%81%83%E3%81%8D%E5%B7%A5%E8%8A%B8%E3%81%A7%E3%81%AE%E5%AE%B6%E5%85%B7%E8%81%B7%E4%BA%BA%EF%BC%88%E8%88%B6%E8%88%B6%E5%AE%B6%E5%85%B7%EF%BC%89%E3%81%AE%E3%83%8F%E3%83%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%82%AF%E6%B1%82%E4%BA%BA%E6%83%85%E5%A0%B1%EF%BC%88%E9%95%B7%E5%B4%8E%E7%9C%8C%E9%95%B7%E5%B4%8E%E5%B8%82%EF%BC%89-%2042010-13270551/"
+            href={HELLOWORK_FURNITURE_CRAFTSMAN_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
@@ -56,7 +60,7 @@ const JobsPage: React.FC = () => {
             家具職人応募へのリンク
           </a>
           <a
-            href="https://www.instagram.com/yuukikougei_?igsh=c2xmNjJrajN2ZnA1"
+            href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
