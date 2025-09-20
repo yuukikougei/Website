@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { SLIDESHOW_IMAGES } from "../constants/data";
 
 const HomePage: React.FC = () => {
-  const images = [
-    import.meta.env.BASE_URL + "images/PRJ_001.JPG",
-    import.meta.env.BASE_URL + "images/PRJ_002.JPG",
-    import.meta.env.BASE_URL + "images/PRJ_003.JPG",
-    import.meta.env.BASE_URL + "images/PRJ_004.JPG",
-  ];
+  const images = SLIDESHOW_IMAGES;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {

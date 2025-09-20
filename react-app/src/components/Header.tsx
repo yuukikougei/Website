@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { INSTAGRAM_URL } from "../constants/urls";
+import { SOCIAL_MEDIA_URLS } from "../constants/urls";
+import { PROJECT_IMAGES } from "../constants/data";
 
 const Header: React.FC = () => {
   const location = useLocation();
@@ -14,7 +15,7 @@ const Header: React.FC = () => {
       <div className="container">
         <div className="logo">
           <img
-            src={import.meta.env.BASE_URL + "images/LOGO.JPG"}
+            src={PROJECT_IMAGES.LOGO}
             alt="YUUKI KOUGEI Logo"
           />
           <span>ゆうき工芸</span>
@@ -43,7 +44,7 @@ const Header: React.FC = () => {
               </Link>
             </li>
             <li>
-              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+              <a href={SOCIAL_MEDIA_URLS.INSTAGRAM} target="_blank" rel="noopener noreferrer">
                 Instagram
               </a>
             </li>

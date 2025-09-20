@@ -1,8 +1,7 @@
 import React from "react";
 import {
-  INSTAGRAM_URL,
-  HELLOWORK_SHIP_CARPENTER_URL,
-  HELLOWORK_FURNITURE_CRAFTSMAN_URL,
+  SOCIAL_MEDIA_URLS,
+  JOB_RECRUITMENT_URLS,
 } from "../constants/urls";
 
 const JobsPage: React.FC = () => {
@@ -45,7 +44,7 @@ const JobsPage: React.FC = () => {
 
         <div className="job-links">
           <a
-            href={HELLOWORK_SHIP_CARPENTER_URL}
+            href={JOB_RECRUITMENT_URLS.SHIP_CARPENTER}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
@@ -53,7 +52,7 @@ const JobsPage: React.FC = () => {
             船舶現場大工応募へのリンク
           </a>
           <a
-            href={HELLOWORK_FURNITURE_CRAFTSMAN_URL}
+            href={JOB_RECRUITMENT_URLS.FURNITURE_CRAFTSMAN}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
@@ -61,7 +60,7 @@ const JobsPage: React.FC = () => {
             家具職人応募へのリンク
           </a>
           <a
-            href={INSTAGRAM_URL}
+            href={SOCIAL_MEDIA_URLS.INSTAGRAM}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
